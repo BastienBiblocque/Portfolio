@@ -1,0 +1,73 @@
+.container_presentation{
+    height: 780px;
+    background-color: #1abc9c;
+    z-index: -1;
+    position: relative;
+}
+.container_presentation .barre_gauche{
+    background-color: white;
+    border-radius: 5px;
+    height: 4.5px;
+    width: 10%;
+    position: absolute;
+    bottom: 175px;
+    left: 42%;
+    transform: translateX(-50%);
+}
+.container_presentation .barre_droite{
+    background-color: white;
+    border-radius: 5px;
+    height: 4.5px;
+    width: 10%;
+    position: absolute;
+    bottom: 175px;
+    right: 42%;
+    transform: translateX(50%);
+}
+.container_presentation .star{
+    height: 40px;
+    width: 40px;
+    object-fit: none;
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container_presentation .titre{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container_presentation .nom{
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container_presentation .profil{
+    border-radius: 10%;
+    height: 300px;
+    width: 200px;
+    object-fit: none;
+    position: absolute;
+    bottom: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container_presentation .star{
+    height: 40px;
+    width: 40px;
+    object-fit: none;
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}

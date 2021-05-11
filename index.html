@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/presentation.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/parcours.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://kit.fontawesome.com/b131889dbb.js" crossorigin="anonymous"></script>
+
+    <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+<body>
+        <div id="menu">
+            <div class="contenu_menu">
+                <label class="nom"><a href="#">Biblocque Bastien</a></label>
+                <div class="liens">
+                    <a href="#portfolio">
+                        <div class="item_menu" id="b_portfolio"> 
+                            Portfolio
+                        </div>
+                    </a>
+                    <a href="#parcours">
+                        <div class="item_menu" id="b_parcours">
+                            <NOBR>Mon Parcours</NOBR>
+                        </div>
+                    </a>
+                    <a href="#contact">
+                        <div class="item_menu" id="b_contact">
+                            <NOBR>Me Contacter</NOBR>
+                        </div>
+                    </a>
+                </div>
+                <div class="liens_mobile">
+                    <div class="button_mobile" id="button_mobile">
+                        Menu <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_mobile" id="menu_mobile">
+            <div class="liens_mobile_version">
+                <a href="#portfolio">
+                    <div class="item_menu" id="b_portfolio"> 
+                        <div class="animate__animated animate__fadeInDown">
+                            portfolio
+                        </div>
+                    </div>
+                </a>
+                <a href="#parcours">
+                    <div class="item_menu" id="b_parcours">
+                        <div class="animate__animated animate__fadeInDown">
+                            <NOBR>Mon Parcours</NOBR>
+                        </div>
+                    </div>
+                </a>
+                <a href="#contact">
+                    <div class="item_menu" id="b_contact">
+                        <div class="animate__animated animate__fadeInDown">
+                            <NOBR>Me Contacter</NOBR>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container_presentation">
+            <img src="src/avataaars.svg" class="profil">
+            <img src="src/star.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <label class="nom"><NOBR>Biblocque Bastien</NOBR></label>
+            <label class="titre"><NOBR>Developpeur Full Stack</NOBR></label>
+        </div>
+        <div class="container_portfolio" id="portfolio">
+            <label class="portfolio">Portfolio</label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="contenue_portfolio">
+                <div class="case" id="case">
+                    <a href="#ex1" rel="modal:open">
+                        <div class="cercle" id="image1">
+                            <img src="src/football.webp" alt="">
+                        </div>
+                        <div class="hover" id="hover">
+                            <i class="far fa-plus-square"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="case" id="case2">
+                    <a href="#ex2" rel="modal:open">
+                        <div class="cercle" id="image2">
+                            <img src="src/book.png" alt="">
+                        </div>
+                        <div class="hover" id="hover2">
+                            <i class="far fa-plus-square"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="case" id="case3">
+                    <a href="#ex3" rel="modal:open">
+                        <div class="cercle" id="image3">
+                            <img src="src/bakery.jpg" alt="">
+                        </div>
+                        <div class="hover" id="hover3">
+                            <i class="far fa-plus-square"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="case" id="case4">
+                    <a href="#ex4" rel="modal:open">
+                        <div class="cercle" id="image4">
+                            <img src="src/bakery.jpg" alt="">
+                        </div>
+                        <div class="hover" id="hover4">
+                            <i class="far fa-plus-square"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="case" id="case5">
+                    <a href="#ex5" rel="modal:open">
+                        <div class="cercle" id="image5">
+                            <img src="src/bakery.jpg" alt="">
+                        </div>
+                        <div class="hover" id="hover5">
+                            <i class="far fa-plus-square"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="case" id="case6">
+                    <a href="#ex6" rel="modal:open">
+                        <div class="cercle" id="image6">
+                            <img src="src/bakery.jpg" alt="">
+                        </div>
+                        <div class="hover" id="hover6">
+                            <i class="far fa-plus-square"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container_parcours" id="parcours">
+            <label class="portfolio"><NOBR>Mon Parcours</NOBR></label>
+            <img src="src/star.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="texte">
+                <div class="formation">
+                    <h1><NOBR>Mes Formations</NOBR></h1>
+                    <ul>
+                        <li>BAC+3 Développeur Full Stack - Metz Numeric Schoole - Rentrée 2021</li>
+                        <li>Formation Développeur d'application web - AFPA - 2020 2021</li>
+                        <li>DUT Informatique Graphique - Le Puy-en-Velay - 2017 - 2019</li>
+                        <li>Baccalauréat Scientifique - Aurillac - 2015 - 2017</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h1><NOBR>Mes Experiences</NOBR></h1>
+                    <ul>
+                        <li>Manutentionnaire - Ussel - Aout 2020</li>
+                        <li>Employé polyvalent - Bort-les-Orgues - 2019 -2020</li>
+                        <li>Stage : Modélisateur 3D - Zhaoqing, China - 2019</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="CV.pdf" class="button"  target="_blank">
+                <i class="fas fa-download"></i> Voir mon CV
+            </a>
+        </div>
+        <div class="container_contact" id="contact">
+            <label class="portfolio"><NOBR>Me Contacter</NOBR></label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <form class="send">
+                <div class="input_nom">
+                    <input id="input_nom" class="nom" type="text" placeholder=" " id="input_nom">
+                    <label for="nom" class="label_nom" id="label_nom">Nom</label>
+                </div>
+                <div class="input_mail">
+                    <input id="input_email" class="mail" type="text" placeholder=" " id="input_mail">
+                    <label for="mail" class="label_mail" id="label_mail">E-Mail</label>
+                </div>
+                <div class="input_message">
+                    <input id="input_message" class="message" type="text" placeholder=" " id="input_message">
+                    <label for="message" class="label_message" id="label_message">Message</label>
+                </div>
+                <input type="button" value="Envoyer" class="button_envoyer" id="send_button">
+            </form>
+        </div>
+        <div class="container_footer">
+            <div class="contenue_footer">
+                <div class="location">
+                    <h1>Mes Coordonnées</h1>
+                    <div class="contenue_location">
+                        <h2> <i class="fas fa-map-pin"></i> 8 Grande Rue <br> 19290 Sornac</h2>
+                        <h2><i class="fas fa-phone"></i> +33 6.32.10.21.94</h2>
+                    </div>
+                </div>
+                <div class="follow">
+                    <h1> Me retrouver sur</h1>
+                    <div class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="git">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="ex1" class="modal">
+            <label class="portfolio"> <NOBR>EURO 2020</NOBR></label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="modal_contenue">
+                <div class="case case1">
+                    <img src="src/football.webp" alt="">
+                </div>
+                <div class="modal_texte">
+                    Consultable <a href="https://euro-2020-bet.000webhostapp.com"> ici</a><br>
+                    Projet WEB réalisé en HTML, CSS, JS et PHP <br>
+                    Il permet de réalisé des prediction sur des matchs futurs, avec gestion de profil et de classement automatisé via une API <br>
+                    Apprentissage de technologie lié au PHP, base de données et utilisation d'API
+                </div>
+            </div>
+            <a class="button_envoyer" href="#" rel="modal:close"><i class="fas fa-times"></i> Close</a>
+        </div>
+
+        <div id="ex2" class="modal">
+            <label class="portfolio">Médiathéque</label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="modal_contenue">
+                <div class="case case2">
+                    <img src="src/book.png" alt="">
+                </div>
+                <div class="modal_texte">
+                    Projet WEB réalisé en Java et JEE <br>
+                    Permet de gerer une base de données et faire des recherches précise dans cette base de données <br>
+                    Réalisé pendant ma formation de developpeur d'application Web
+                </div>
+            </div>
+            <a class="button_envoyer" href="#" rel="modal:close"><i class="fas fa-times"></i> Close</a>
+        </div>
+
+        <div id="ex3" class="modal">
+            <label class="portfolio">Modélisation 3D</label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="modal_contenue">
+                <div class="case case3">
+                    <img src="src/bakery.jpg" alt="">
+                </div>
+                <div class="modal_texte">
+                    Projet en modélisation réalisé lors de mon stage en Chine en 2019 <br>
+                    Réalisé sous 3DS MAX l'objectif est la réalisation et l'implentation d'un quartier francais dans un quartier de la ville.
+                    J'ai donc décidé de réalisé une boulangerie à intégré dans notre quartier francais
+                    Les modèles 3D on étais ensuite implanté en Réalité Virtuel avec Unreal Engine
+                    <br>
+                    <a href="bakery.pdf"   target="_blank">Voir l'affiche</a>
+                    
+                </div>
+            </div>
+            <a class="button_envoyer" href="#" rel="modal:close"><i class="fas fa-times"></i> Close</a>
+        </div>
+        <div id="ex4" class="modal">
+            <label class="portfolio">test 3D</label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="modal_contenue">
+                <div class="case case4">
+                    <img src="src/bakery.jpg" alt="">
+                </div>
+                <div class="modal_texte">
+                    Projet en modélisation réalisé lors de mon stage en Chine en 2019 <br>
+                    Réalisé sous 3DS MAX l'objectif est la réalisation et l'implentation d'un quartier francais dans un quartier de la ville.
+                    J'ai donc décidé de réalisé une boulangerie à intégré dans notre quartier francais
+                    Les modèles 3D on étais ensuite implanté en Réalité Virtuel avec Unreal Engine
+                    <br>
+                    <a href="bakery.pdf"   target="_blank">Voir l'affiche</a>
+                    
+                </div>
+            </div>
+            <a class="button_envoyer" href="#" rel="modal:close"><i class="fas fa-times"></i> Close</a>
+        </div>
+        <div id="ex5" class="modal">
+            <label class="portfolio">Modélisation 3D</label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="modal_contenue">
+                <div class="case case5">
+                    <img src="src/bakery.jpg" alt="">
+                </div>
+                <div class="modal_texte">
+                    Projet en modélisation réalisé lors de mon stage en Chine en 2019 <br>
+                    Réalisé sous 3DS MAX l'objectif est la réalisation et l'implentation d'un quartier francais dans un quartier de la ville.
+                    J'ai donc décidé de réalisé une boulangerie à intégré dans notre quartier francais
+                    Les modèles 3D on étais ensuite implanté en Réalité Virtuel avec Unreal Engine
+                    <br>
+                    <a href="bakery.pdf"   target="_blank">Voir l'affiche</a>
+                    
+                </div>
+            </div>
+            <a class="button_envoyer" href="#" rel="modal:close"><i class="fas fa-times"></i> Close</a>
+        </div>
+        <div id="ex6" class="modal">
+            <label class="portfolio"><NOBR>Création de ce portfolio</NOBR></label>
+            <img src="src/star_gris.svg" class="star">
+            <div class="barre_gauche"></div>
+            <div class="barre_droite"></div>
+            <div class="modal_contenue">
+                <div class="case case6">
+                    <img src="src/bakery.jpg" alt="">
+                </div>
+                <div class="modal_texte">
+                    Projet en modélisation réalisé lors de mon stage en Chine en 2019 <br>
+                    Réalisé sous 3DS MAX l'objectif est la réalisation et l'implentation d'un quartier francais dans un quartier de la ville.
+                    J'ai donc décidé de réalisé une boulangerie à intégré dans notre quartier francais
+                    Les modèles 3D on étais ensuite implanté en Réalité Virtuel avec Unreal Engine
+                    <br>
+                    <a href="bakery.pdf"   target="_blank">Voir l'affiche</a>
+                    
+                </div>
+            </div>
+            <a class="button_envoyer" href="#" rel="modal:close"><i class="fas fa-times"></i> Close</a>
+        </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/hover.js"></script>
+    <script type="text/javascript" src="js/menu_color.js"></script>
+    <script type="text/javascript" src="js/resize.js"></script>
+    <script type="text/javascript" src="js/menu_mobile.js"></script>
+    <script type="text/javascript" src="js/send_mail.js"></script>
+
+</body>
+</html>
